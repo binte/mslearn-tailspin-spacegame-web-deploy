@@ -102,7 +102,7 @@ stages:
     pool:
       vmImage: 'windows-2019'
     variables:
-    - group: 'Release'
+    - group: 'Tailspin Space Game - Release'
     environment: 'dbaverificationscript'
     strategy:
       runOnce:
@@ -140,7 +140,7 @@ stages:
     pool:
       vmImage: 'windows-2019'
     variables:
-    - group: 'Release'
+    - group: 'Tailspin Space Game - Release'
     environment: 'dbaverificationapply'
     strategy:
       runOnce:
@@ -179,7 +179,7 @@ stages:
       vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
-    - group: Release
+    - group: 'Tailspin Space Game - Release'
     strategy:
       runOnce:
         deploy:
@@ -202,7 +202,7 @@ stages:
       vmImage: 'ubuntu-16.04'
     environment: test
     variables:
-    - group: 'Release'
+    - group: 'Tailspin Space Game - Release'
     strategy:
       runOnce:
         deploy:
@@ -225,7 +225,7 @@ stages:
       vmImage: 'ubuntu-16.04'
     environment: staging
     variables:
-    - group: 'Release'
+    - group: 'Tailspin Space Game - Release'
     strategy:
       runOnce:
         deploy:
